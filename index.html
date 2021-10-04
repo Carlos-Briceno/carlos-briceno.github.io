@@ -1,104 +1,267 @@
 <!DOCTYPE html>
 <html>
     <!--Head-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Carlos Briceno</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
-        <script src="JS/portfolio.js"></script>
-    </head>
-
-    <!--Body-->
-    <body class="Background">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
-        <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/7f9673f854.js" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <title>Portfolio</title>
+      </head>
+      <body>
+        <!-- Nav Tab -->
+        <div class="container">
+        <nav>
+            <ul class="nav nav-tabs nav- ">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
         </div>
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
-
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Carlos Briceno's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <br> My name is Carlos Briceno. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br> Thank you for stopping by and enjoy! 
+    <!-- Header -->
+    <div class="section header-section" id="home">
+        <div class="container header-container mt-5 mb-3 p-4">
+            <h1>Carlos Briceno</h1>
+                <p class="lead">
+                    <strong>Enjoys Front and Back End Design,Problem Solving, and Working as a Team!</strong>
                 </p>
-            </strong>
+                <div class="row d-flex flex-row justify-content-around align-items-center">
+                    <div class="col-md-3">
+                        <img src="images/Profile.jpg" class="img-fluid" style="border-radius: 85%;" alt="profile-pic">
+                    </div>
+                    <div class="col-md-7 mt-2">
+                        <div>
+                            <p class="about-text">
+                                Thanks for visiting my site! I graduated from the Tech Academy in 2021. I am working on my skills
+                                and looking to work with others on projects! 
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </div>
+    </div>
 
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./images/Picture_1.jpg" alt="Replace with your own image and description">
+        <!-- Projects -->
+        <section id="projects" class="text-center py-5 projects-section">
+            <div class="container mt-5">
+                <div class="col">
+                    <h2 class="mb-3">Projects</h2>
+                    <h5>Theater Website</h5>
+                    <div>
+                        <div class="card text-dark bg-light mb-3">
+                            <div class="car-body">
+                                <div class="mx-3">
+                                    <p>
+                                        This project is a theater website. It includes information on the current season, past productions
+                                        and the current cast members. It allows the company to easily upload content.
+                                        Finally it allows user's to manage their subscriptions.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <h5 class="mb-3">Video Game Review</h5>
+                    <div class="card text-dark bg-light mb-3">
+                        <div class="car-body">
+                            <div class="mx-3">
+                                <p>
+                                    This project is about a user reviewing their favorite video games. When
+                                    they review a game it gets uploaded into the database and showcases
+                                    on a page where other people will get to see.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer who loves to code! I love gaming and chatting with friends. I also love eating food! 
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. 
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
-                </p>
-            </div>
-        </div>
+        </section>
+                <!-- Skills -->
+                <div class="inner" id="skills">
+                    <div class="header text-center">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="container-skill">
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/HTML5.png" class="skill-icon">
+                                </div>
+                                <h5>HTML 5</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/CSS.png" class="skill-icon">
+                                </div>
+                                <h5>CSS</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/js.png" class="skill-icon">
+                                </div>
+                                <h5>JavaScript</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/bootstrap.png" class="skill-icon">
+                                </div>
+                                <h5>Bootstrap 4/5</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/c-sharp.png" class="skill-icon">
+                                </div>
+                                <h5>C#</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/python.png" class="skill-icon">
+                                </div>
+                                <h5>Python</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/net.png" class="skill-icon">
+                                </div>
+                                <h5>.NET | ASP.NET</h5>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="images/sql.jpg" class="skill-icon">
+                                </div>
+                                <h5>SQL | MySQL</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--Contact section-->
+                    <section class="contact-section my-5">
+                        <div class="container" id="contact">
+                            <div class="card card-custom">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="card-body form">
+                                            <form action="https://formspree.io/f/mdopwngg" method="POST">
+                                            <h3 class="mt-4"><i class="fas fa-user-astronaut pr-2"></i>Contact Me</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="form-contact-name" class="">Name</label>
+                                                        <input type="text" id="form-contact-name" class="form-control" name="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="form-contact-email" class="">Email</label>
+                                                        <input type="text" id="form-contact-email" class="form-control" name="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="form-contact-phone" class="">Phone</label>
+                                                        <input type="text" id="form-contact-phone" class="form-control" name="phone-number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="md-form mb-0">
+                                                        <label for="form-contact-company" class="">Company</label>
+                                                        <input type="text" id="form-contact-company" class="form-control" name="company">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="md-form mb-0">
+                                                        <label for="form-contact-message">Your Message</label>
+                                                        <textarea id="form-contact-message" class="form-control md-textarea"
+                                                            rows="3" name="message"></textarea>
+                                                            <button type="submit" class="send-button"><span style="font-size: small;">Send </span><i class="fas fa-rocket"></i></button>            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card-body contact text-center h-100 white-text">
+                                            <h3 class="my-4 pb-2">Contact Information</h3>
+                                            <ul class="text-lg-left list-unstyled ml-4">
+                                                <li>
+                                                    <p><i class="fas fa-map-marker-alt pr-2"></i>West Jordan, UT</p>
+                                                </li>
+                                                <li>
+                                                    <p><i class="fas fa-mobile"></i>(916)-217-5493</p>
+                                                </li>
+                                                <li>
+                                                    <p><i class="fas fa-envelope pr-2"></i>cxbriceno@gmail.com</p>
+                                                </li>
+                                            </ul>
+                                            <hr class="hr-light my-4">
+                                            <ul class="list-inline text-center list-unstyled">
+                                                <li class="list-inline-item">
+                                                    <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/carlos-xa-briceno/">
+                                                        <i class="fab fa-linkedin-in"> </i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="p-2 fa-lg ins-ic" href="https://github.com/Carlos-Briceno">
+                                                        <i class="fab fa-github"> </i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/Carlos-Briceno" target="_blank">Carlos Briceno's Github</a></p>
-                </p>
-            </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/github-logo.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
-
-        <!--Contact section-->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                 <form action="https://formspree.io/f/mdopwngg" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                     <h1>Contact</h1>
-                     <label for="name"><b>Name</b></label>
-                       <input type="text" placeholder="Type your name here" name="name" required>
-                     <label for="phone"><b>Phone</b></label>
-                       <input type="text" placeholder="Type your phone number here" name="phone">
-                     <label for="email"><b>Email</b></label>		
-                       <input type="text" placeholder="Type your email address here" name="email" required>
-                     <label for="message"><b>Message</b></label>
-                       <input type="text" placeholder="Type your message here" name="message">
-          
-                     <button type="submit" class="btn">SUBMIT</button>
-                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                 </form>
-            </div>
-         </div>
-
-        <!--Footer section-->
-        <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
-        </footer>
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     </body>
 </html>
