@@ -229,3 +229,20 @@ i {
     color: #17090E;
     margin-top: 0.75rem;
 }
+
+.button-neutral {
+    padding: 8px;
+    text-decoration: none;
+    color: var(--dark-color);
+    background-color: var(--neutral-color);
+    box-shadow: inset 0 0 1.5px var(--dark-color), 0 0 1.5px var(--dark-color);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-neutral:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
